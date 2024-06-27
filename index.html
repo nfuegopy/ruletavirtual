@@ -16,12 +16,11 @@
     <script src="js/sweetalert.min.js"></script>
 
     <!-- Open Graph Meta Tags -->
-    <meta property="og:url" content="https://oscaruhp.github.io/Laruleta/">
+    <meta property="og:url" content="https://github.com/nfuegopy/ruletavirtual">
     <meta property="og:type" content="article">
     <meta property="og:title" content="La ruleta (Rifa cosas)">
-    <meta property="og:description" content="Con esta ruleta online puedes rifar lo que gustes, solo llena la lista y genera tu ruleta">
-    <meta property="og:image" content="https://oscaruhp.github.io/Laruleta/img/ruleta.jpg">
 
+    
     <style>
         #canvasContainer {
             background-image: url('img/regalo.gif');
@@ -44,6 +43,27 @@
                 height: auto !important;
             }
         }
+
+        .contact-button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #25D366;
+            color: white;
+            padding: 10px;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            text-decoration: none;
+        }
+
+        .contact-button i {
+            font-size: 24px;
+        }
+
+        .footer-contact {
+            margin-top: 10px;
+        }
     </style>
 </head>
 
@@ -51,7 +71,7 @@
     <form id="form1" runat="server">
         <div class="container-fluid">
             <div class="row justify-content-center">
-                <div class="col-12 col-md-3 text-center mb-4">
+         <!--       <div class="col-12 col-md-3 text-center mb-4"> -->
                     <!-- <div class="text-left">
                         <img src="img/premios.png" class="img-fluid" alt="Premios">
                     </div> -->
@@ -72,7 +92,7 @@ Chopera
                             <br>
                         </div>
                     </div>
-                </div>
+                <!-- </div> -->
 
                 <div class="col-12 col-md-7 text-center mb-4">
                     <input id="bigButton" class="btn btn-success btn-block btn-lg mb-3" onclick="objRuleta.startAnimation(); this.disabled=true;" value="Jugar Ruleta" type="button">
@@ -174,24 +194,30 @@ Chopera
     </form>
 
     <div class="container text-center mt-4 mb-4">
-        <h5>Solicita tu sorteo personalizado</h5>
-        <a href="https://wa.me/595982580075" class="btn btn-primary">
-            Contactar vía WhatsApp
+    
+        <a href="https://wa.me/595982580075" class="contact-button">
+            <i class="fab fa-whatsapp"></i>
         </a>
     </div>
 
     <footer class="text-center mt-4 bg-dark text-white py-3">
         <div class="container">
-            <span>©2022 Antonio Barrios, Inc. Todos los derechos reservados.</span>
+            <span>©2024 Antonio Barrios, Inc. Todos los derechos reservados.</span>
             <div class="mt-2">
+                <a href="mailto:acbleguizamon@gmail.com" class="text-white mx-2">
+                    <i class="fas fa-envelope"></i> acbleguizamon@gmail.com
+                </a>
+                <a href="tel:+595982580075" class="text-white mx-2">
+                    <i class="fas fa-phone"></i> +595 982 580 075
+                </a>
                 <a href="https://www.linkedin.com/in/acbleguizamon?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="text-white mx-2">
-                    <i class="fab fa-linkedin"></i> LinkedIn
+                    <i class="fab fa-linkedin"></i> Antonio Barrios
                 </a>
                 <a href="https://www.instagram.com/nfuegopy?igsh=cmNqNXB6NHEyN2V1" class="text-white mx-2">
-                    <i class="fab fa-instagram"></i> Instagram
+                    <i class="fab fa-instagram"></i> NfuegoPy
                 </a>
                 <a href="https://x.com/AntonioNFuegoPy?t=jV-D9Q7I2-EBipCj74r_eg&s=09" class="text-white mx-2">
-                    <i class="fab fa-twitter"></i> Twitter
+                    <i class="fab fa-twitter"></i> AntonioNFuegoPy
                 </a>
             </div>
         </div>
