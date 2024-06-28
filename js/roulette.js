@@ -7,9 +7,13 @@ var ctx;
 function Mensaje() {
     winningSegment = objRuleta.getIndicatedSegment();
     SonidoFinal();
+
+    // Ruta de la imagen del premio
+    var imagePath = "img/premios/" + winningSegment.text.toLowerCase().replace(/ /g, "_") + ".jpg";
+
     swal({
         title: " ¡Ganaste " + winningSegment.text + " !",
-        imageUrl: "img/Muerte.gif",
+        imageUrl: imagePath,
         showCancelButton: true,
         confirmButtonColor: "#e74c3c",
         confirmButtonText: "Reiniciar",
@@ -92,8 +96,7 @@ function mezclarElementosRuleta(array) {
 
 leerElementos();
 
-
-var audio = new Audio('alama.mp3');  // Create audio object and load desired file.
+var audio = new Audio('../../sounds/alama.mp3');  
 function SonidoFinal() {
     audio.pause();
     audio.currentTime = 0;
