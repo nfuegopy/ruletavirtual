@@ -1,0 +1,42 @@
+#canvasContainer {
+    background-image: url('../img/regalo.gif');
+    background-repeat: no-repeat;
+    background-position: center;
+    max-width: 100%;
+    height: auto;
+    cursor: pointer;
+    margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+    #canvasContainer {
+        width: 100%;
+        height: auto;
+    }
+
+    canvas {
+        width: 100% !important;
+        height: auto !important;
+    }
+}
+
+.contact-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #25D366;
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    text-decoration: none;
+}
+
+.contact-button i {
+    font-size: 24px;
+}
+
+.footer-contact {
+    margin-top: 10px;
+}
